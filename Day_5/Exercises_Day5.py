@@ -1,5 +1,6 @@
 # Day 5: 30 Days of python programming
 import math
+import statistics
 
 # Exercises: Day 5 Lists
     # Exercises: Level 1
@@ -100,3 +101,87 @@ print(it_companies[int(len(it_companies) / 2 - 1)])
 it_companies.remove(it_companies[0])
 print (it_companies)
 
+# 22. Remove the middle IT company or companies from the list
+
+
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+it_companies.remove(it_companies[int(len(it_companies) / 2)])
+
+print(it_companies)
+
+
+# 23. Remove the last IT company from the list
+
+it_companies.remove(it_companies[-1])
+print(it_companies)
+
+# 24. Remove all IT companies from the list
+
+it_companies.clear()
+print(it_companies)
+
+# 25. Destroy the IT companies list
+
+del it_companies
+
+# 26. Join the following lists:
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+
+full = front_end + back_end
+print(full)
+
+# 27. After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
+
+full_stack = full.copy()
+full_stack.insert(5, 'Python')
+full_stack.insert(6, 'SQL')
+print(full_stack)
+
+    # Exercises: Level 2
+
+# 1. The following is a list of 10 students ages:
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# Sort the list and find the min and max age
+
+ages.sort()
+min_age = min(ages)
+max_age = max(ages)
+print(ages)
+print('The min age is:', min_age)
+print('The max age is:', max_age)
+
+
+
+# Add the min age and the max age again to the list
+
+ages.append(min_age)
+ages.append(max_age)
+ages.sort()
+print(ages)
+
+# Find the median age (one middle item or two middle items divided by two)
+
+mid_age = int(statistics.median(ages))
+print('The median age is:', mid_age)
+
+# Find the average age (sum of all items divided by their number )
+
+avg_age = int(statistics.mean(ages))
+print('The average age is:', avg_age)
+
+# Find the range of the ages (max minus min)
+
+range_age = max_age - min_age
+print(range_age)
+
+# Compare the value of (min - average) and (max - average), use abs() method
+
+comp_min = abs(min_age - avg_age)
+comp_max = abs(max_age - avg_age)
+print(comp_max == comp_min)
+print(comp_max > comp_min)
