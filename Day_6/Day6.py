@@ -98,4 +98,23 @@ print('orange' in fruits)
 print('apple' in fruits)
 # fruits[0] = 'apple'
 
-# Joining Tuples 
+# Joining Tuples
+    # We can join two or more tuples using + operator
+        # Syntax:
+            # tpl1 = ('item1', 'item2', 'item3')
+            # tpl2 = ('item4', 'item5', 'item6')
+            # tpl3 = tpl1 + tpl2
+
+fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('tomato', 'potato', 'cabbage', 'onion', 'carrot')
+fruits_and_vegetables = fruits + vegetables
+
+print(fruits_and_vegetables)
+
+# Deleting Tuples
+    # It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself using del.
+        # Syntax: tpl1 = ('item1', 'item2', 'item3')
+        # del tpl1
+
+fruits = ('banana', 'orange', 'mango', 'lemon')
+del fruits
