@@ -129,3 +129,55 @@ vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
 fruits.update(vegetables)
 print(fruits)
 
+# Finding Intersection Items
+    # Intersection returns a set of items which are in both sets
+        # Syntax:
+            # st1 = {'item1', 'item2', 'item3', 'item4'}
+            # st2 = {'item3', 'item2'}
+            # st1.intersection(st2)
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.intersection(even_numbers)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+python.intersection(dragon)
+
+# Checking Subset and Super Set
+    # A set can be a subset or a super ser of other sets
+    # Subset: issubset()
+    # Super ser: issuperset()
+        # Syntax: 
+            # st1 = {'item1', 'item2', 'item3', 'item4'}
+            # st2 = {'item2', 'item3'}
+            # st2.issubset(st1) - True
+            # st1.issuperset(st2) - True
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.issubset(even_numbers) # False because it is a super set
+whole_numbers.issuperset(even_numbers) # True
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+python.issubset(dragon) # False
+
+# Checking the difference between two sets
+    # It returns the difference between two sets
+        # Syntax:
+            # st1 = {'item1', 'item2', 'item3', 'item4'}
+            # st2 = {'item2', 'item3'}
+            # st2.difference(st1) - set()
+            # st1.difference(st2) - {'item1', 'item4'} => st1\st2
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+python.difference(dragon) # {'p', 'y', 't'} - the result is unordered (characteristic of sets)
+dragon.difference(python) # {'d', 'r', 'a', 'g'}
+
+# 
