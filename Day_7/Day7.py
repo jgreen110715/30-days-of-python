@@ -180,4 +180,4 @@ dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
 python.difference(dragon) # {'p', 'y', 't'} - the result is unordered (characteristic of sets)
 dragon.difference(python) # {'d', 'r', 'a', 'g'}
 
-# 
+# Finding Symmetric Difference Between Two Sets
