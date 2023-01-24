@@ -181,3 +181,38 @@ python.difference(dragon) # {'p', 'y', 't'} - the result is unordered (character
 dragon.difference(python) # {'d', 'r', 'a', 'g'}
 
 # Finding Symmetric Difference Between Two Sets
+    # It returns the the symmetric difference between two sets. It means that it returns a set that contains all items from both sets, except items that are present in both sets, mathematically: (A\B) ∪ (B\A)
+        # Syntax:
+            # st1 = {'item1', 'item2', 'item3', 'item4'}
+            # st2 = {'item2', 'item3'}
+                # it means (A\B)U(B\A)
+            # st2.symetric_difference(st1)
+                # {'item1', 'item4'}
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+some_numbers = {1, 2, 3, 4, 5}
+ex1 = whole_numbers.symmetric_difference(some_numbers)
+print(ex1)
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+ex2 = python.symmetric_difference(dragon)
+print(ex2)
+
+# Joining Sets
+    # If two sets do not have a common item or items we call them disjoint sets. We can check if two sets are joint or disjoint using isdisjoint() method.
+        # Syntax:
+            # st1 = {'item1', 'item2', 'item3', 'item4'}
+            # st2 = {'item2', 'item3'}
+            # st2.isdisjoint(st1)
+                # False
+
+even_numbers = {0, 2, 4 ,6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+ex1 = even_numbers.isdisjoint(odd_numbers)
+print(ex1)
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+ex2 = python.isdisjoint(dragon)
+print(ex2)
