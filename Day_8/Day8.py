@@ -73,18 +73,17 @@ print(person['address']['street'])
 
     # Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the get method. The get method returns None, which is a NoneType object data type, if the key does not exist.
 
-person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
-    'age':250,
-    'country':'Finland',
-    'is_marred':True,
-    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-    'address':{
-        'street':'Space street',
-        'zipcode':'02210'
-    }
-    }
+person = {'first_name' : 'Jon',
+          'last_name' : 'Green',
+          'age' : 34,
+          'country' : 'USA',
+          'is_married' : True,
+          'skills' : ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+          'address' : {
+            'street' : 'Commonwealth Ave',
+            'zip_code' : '02763',
+          } 
+         }
 print(person.get('first_name'))
 print(person.get('country'))
 print(person.get('skills'))
@@ -96,18 +95,17 @@ print(person.get('city'))
             # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
             # dct['key5'] = 'value5'
 
-person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
-    'age':250,
-    'country':'Finland',
-    'is_marred':True,
-    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-    'address':{
-        'street':'Space street',
-        'zipcode':'02210'
-    }
-    }
+person = {'first_name' : 'Jon',
+          'last_name' : 'Green',
+          'age' : 34,
+          'country' : 'USA',
+          'is_married' : True,
+          'skills' : ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+          'address' : {
+            'street' : 'Commonwealth Ave',
+            'zip_code' : '02763',
+          } 
+         }
 person['job_title'] = 'Engineer'
 person['skills'].append('HTML')
 print(person)
@@ -117,18 +115,17 @@ print(person)
         # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
         # dct['key1'] = 'value-one'
 
-person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
-    'age':250,
-    'country':'Finland',
-    'is_marred':True,
-    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-    'address':{
-        'street':'Space street',
-        'zipcode':'02210'
-    }
-    }
+person = {'first_name' : 'Jon',
+          'last_name' : 'Green',
+          'age' : 34,
+          'country' : 'USA',
+          'is_married' : True,
+          'skills' : ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+          'address' : {
+            'street' : 'Commonwealth Ave',
+            'zip_code' : '02763',
+          } 
+         }
 person['first_name'] = 'Jonathan'
 person['age'] = 35
 
@@ -154,16 +151,56 @@ person['age'] = 35
 
             # del dct['key2']
 
-person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
-    'age':250,
-    'country':'Finland',
-    'is_marred':True,
-    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-    'address':{
-        'street':'Space street',
-        'zipcode':'02210'
-    }
-    }
+person = {'first_name' : 'Jon',
+          'last_name' : 'Green',
+          'age' : 34,
+          'country' : 'USA',
+          'is_married' : True,
+          'skills' : ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+          'address' : {
+            'street' : 'Commonwealth Ave',
+            'zip_code' : '02763',
+          } 
+         }
 
+person.pop('first_name')
+person.popitem()
+del person['is_married']
+print(person)
+
+# Changing Dictionary to a List
+    # the items() method changes dictionary to a list of tuples
+        # Syntax:
+            # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+            # print(dct.items())
+
+# Clearing a Dictionary
+    # If we don't want the items in a dictionary we an clear them using the clear() method
+        # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+        # print(dct.clear())
+
+# Deleting a Dictionary
+    # If we do not use the dictionary, we can delete it completely
+        # Syntax:
+            # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+            # del dct
+
+# Copying a Dictionary
+    # We can copy a dictionary using a copy() method. Using copy we can avoid mutation of the original dictionary.
+        # Syntax:
+            # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+            # dct_copy = dct.copy()
+
+# Getting Dictionary Keys as a List
+    # The keys () method gives us all the keys of a dictionary as a list
+        # Syntax: dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+        # keys = dct.keys()
+        # print(keys)
+
+# Getting Dictionary Values as a List
+    # The values method gives us all the values of a dictionary as a list
+        # Syntax:
+            # dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+            # values = dct.values()
+            # print(values)
+            
