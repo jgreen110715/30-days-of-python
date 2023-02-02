@@ -2,7 +2,7 @@
 import math
 import statistics
 
-# Exercises: Day 7 Dictionaries
+# Exercises: Day 8 Dictionaries
 
 # 1. Create an empty dictionary called dog
 
