@@ -2,4 +2,4 @@
 import math
 import statistics
 
-# Exercises: Day 10 - Conditionals
+# Exercises: Day 10 - Loops
