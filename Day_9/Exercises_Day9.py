@@ -104,7 +104,7 @@ person={
     'last_name': 'Green',
     'age': 34,
     'country': 'USA',
-    'is_marred': True,
+    'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'Space street',
@@ -114,16 +114,16 @@ person={
 
 # 1.1 Check if the person dictionary has skills key, if yes print('person has skills') else print('person has no skills')
 if 'skills' in person:
-    print('first_name', 'has skills')
+    print(person['first_name'], 'has skills')
 else:
-    print('first_name', 'has no skills')
+    print(person['first_name'], 'has no skills')
 
 # 1.2 Check if the person dictionary has skills key, if yes check if the person has 'Python' skill and print('person has Python skill') else print('person has no Python skill')
 if 'skills' in person:
     if 'Python' in person['skills']:
-        print('first_name', 'has Python skill')
+        print(person['first_name'], 'has Python skill')
     else:
-        print('first_name', 'has no Python skill')
+        print(person['first_name'], 'has no Python skill')
 
 # 1.3 If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
 
@@ -136,3 +136,11 @@ if 'skills' in person:
         print('He is a fullstack developer')
     else:
         print('unknown title')
+
+# 1.4 Check if the person dictionary has address key, if yes check if the person has 'zipcode' key and print('person has zipcode') else print('person has no zipcode')
+
+if 'country' in person:
+    if person['is_married'] == True:
+        print(person['first_name'], 'is married and lives in', person['country'])
+    else:
+        print(person['first_name'], 'is not married and lives in', person['country'])
