@@ -125,11 +125,106 @@ for key in person:
 for key, value in person.items():
     print(key, value) # this way we get both keys and values printed out
 
-        # Loops in set
-            # Syntax:
-                # for iterator in set:
-                    # code goes here
+# Loops in set
+    # Syntax:
+        # for iterator in set:
+             # code goes here
 
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 for company in it_companies:
     print(company)
+
+# Break and Continue - Part 2
+    # Short reminder: Break: We use break when we like to stop our loop before it is completed.
+        # Syntax:
+            # for iterator in sequence:
+                # code goes here
+                # if condition:
+                    # break
+
+numbers = (0, 1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+
+# in the above example, the loop stops when it reaches 3.
+
+# Continue: We use continue when we like to skip some of the steps in the iteration of the loop.
+
+    # Syntax:
+        # for iterator in sequence:
+            # code goes here
+            # if condition:
+                # continue
+
+numbers = (0, 1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        continue
+    print('Next number should be ', number + 1) if number !=5 else print("loop's end") # for short hand conditions need both if and else statements
+print('outside the loop')
+
+# In the example above, if the number equals 3, the step after the condition (but inside the loop) is skipped and the execution of the loop continues if there are any iterations left.
+
+# The Range Function
+    # The range() function is used list of numbers. The range(start, end, step) takes three parameters: starting, ending, and increment. By default it starts from 0 and the increment is 1. the range sequence needs at least 1 argument(end). Create sequences using range
+
+lst = list(range(11))
+print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+st = set(range(1,11)) # 2 arguments indicate start and end of the sequence, step set to default 1
+print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+lst = list(range(0, 11, 2))
+print(lst) # [0, 2, 4, 6, 8, 10]
+st = set(range(0, 11, 2))
+print(st) # {0, 2, 4, 6, 8, 10}
+
+    # Syntax:
+        # for iterator in range(start, end, step):
+
+for number in range(11):
+    print(number)
+
+# Nested For Loop
+    # We can write loops inside a loop
+        # Syntax:
+            # for x in y:
+                # for t in x:
+                # print(t)
+
+person = {
+    'first_name': 'Jon',
+    'last_name': 'Green',
+    'age': 34,
+    'country': 'USA',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Elm Street',
+        'zipcode': '10001'
+    }                    
+}
+for key in person:
+    if key == 'skills':
+        for skill in person['skills']:
+            print(skill)
+
+# For Else
+    # If we want to execute some message when the loop ends, we use else.
+        # Syntax:
+            # for iterator in range(start, end, step):
+                # do something
+            # else:
+                # print('The loop ended')
+
+for number in range(11):
+    print(number)
+else:
+    print('the loop stops at', number)
+
+# Pass
+    # In python when statement is required (after semicolon), be we don't like to execute any code there, we can write the word pass to avoid errors. Also we can use it as a placeholder, for future statements.
+
+for number in range(6):
+    pass
