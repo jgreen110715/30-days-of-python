@@ -149,7 +149,6 @@ for number in numbers:
         break
 
 # in the above example, the loop stops when it reaches 3.
-
 # Continue: We use continue when we like to skip some of the steps in the iteration of the loop.
 
     # Syntax:
