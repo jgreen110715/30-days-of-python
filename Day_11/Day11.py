@@ -76,3 +76,35 @@ def add_ten(num):
     ten = 10
     return num + 10
 print(add_ten(90))
+
+def square_number(x):
+    return x * x
+print(square_number(2))
+
+def area_of_circle(r):
+    PI = 3.14
+    area = PI * r ** 2
+    return area
+print(area_of_circle(10))
+
+def sum_of_numbers(n):
+    total = 0
+    for i in range(n+1):
+        total += i
+    return(total)
+print(sum_of_numbers(10))
+print(sum_of_numbers(100))
+
+# Two Parameters: A function may or may note hva a parameter or parameters. A function may also have two or more parameters. If our function takes parameters, we should call it with arguments. Let us check a function with two parameters:
+    # Syntax:
+    # Declaring a function
+    # def function_name(parameter1, parameter2):
+    # codes
+    # codes
+    # print(funtion_name(arg1, arg2))
+
+def generate_full_name (first_name, last_name):
+    space = ' '
+    full_name = first_name + space + last_name
+    return full_name
+print('Full Name: ', generate_full_name('Jon', 'Green'))
