@@ -108,3 +108,29 @@ def generate_full_name (first_name, last_name):
     full_name = first_name + space + last_name
     return full_name
 print('Full Name: ', generate_full_name('Jon', 'Green'))
+
+def sum_two_numbers (num_one, num_two):
+    sum = num_one + num_two
+    return sum
+print('Sum of two numbers: ', sum_two_numbers(1, 9))
+
+def calculate_age (current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print('Age: ', calculate_age(2023, 1988))
+
+def weight_of_object (mass, gravity):
+    weight = str(mass * gravity) + ' N'
+    return weight
+print('Weight of an object is Newtons: ', weight_of_object(100, 9.81))
+
+# Passing Arguments with Key and Value
+    # If we pass the arguments with key and value, the order of arguments does not matter.
+        # Syntax:
+        # Declarating a function
+        # def function_name (para1, para2):
+            # codes
+            # codes
+        # Calling a function
+        # print(function_name(para1 = 'John', para2 = 'Doe'))
+
