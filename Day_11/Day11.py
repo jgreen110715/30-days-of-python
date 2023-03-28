@@ -134,3 +134,40 @@ print('Weight of an object is Newtons: ', weight_of_object(100, 9.81))
         # Calling a function
         # print(function_name(para1 = 'John', para2 = 'Doe'))
 
+def print_fullname (firstname, lastname):
+    space = ' '
+    full_name = firstname + space + lastname
+    print(full_name)
+print(print_fullname(firstname = 'Jon', lastname = 'Green'))
+
+def add_two_numbers (num1, num2):
+    total = num1 + num2
+    print(total)
+print(add_two_numbers(num2 = 3, num1 = 2))
+
+# Function Returning a value - Part 2
+    # If we do not return a value with a function then our function is returning None by default. To return a value with a function, we use the keyword return followed by the variable we are returning. We can return any kind of data types from a function.
+
+# Returning a string
+
+def print_name(firstname):
+    return firstname
+print_name('Jon')
+
+def print_full_name(firstname, lastname):
+    space = ''
+    full_name = firstname + space + lastname
+    return full_name
+print_full_name(firstname = 'Jon', lastname = 'Green')
+
+# Returning a number:
+
+def add_two_numbers(num1, num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(2, 3))
+
+def calculate_age (current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print('Age: ', calculate_age(2022, 1822))
